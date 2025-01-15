@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for Available Appointments -->
+    <TextView
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/eb_garamond_semibold"
+        android:text="Available Appointments"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Book Appointment Button -->
+    <Button
+        android:id="@+id/bookAppointmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:fontFamily="@font/eb_garamond_semibold"
+        android:text="Book Appointment"
+        android:textSize="17sp" />
+
+    <!-- RecyclerView to display available appointments -->
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:fontFamily="@font/eb_garamond_semibold"
+        android:text="Cancel Appointment"
+        android:textSize="14sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointmentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

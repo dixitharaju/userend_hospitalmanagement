@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/eb_garamond_semibold"
+        android:text="Support"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search FAQs..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_faqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- Contact section for submitting queries -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Can't find an answer? Send us your query:"
+        android:textSize="19sp" />
+
+    <EditText
+        android:id="@+id/edit_text_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your query here"
+        android:padding="8dp"
+        android:background="@android:drawable/edit_text" />
+
+    <Button
+        android:id="@+id/button_send_query"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:text="Send Query" />
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F0F2F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/eb_garamond_semibold"
+            android:paddingBottom="24dp"
+            android:text="User Profile"
+            android:textAlignment="center"
+            android:textColor="#222222"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Profile Image with Shadow and Gradient Border -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:radius="80dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_gradient_border"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- User Details Card -->
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#03A9F4"
+            android:fontFamily="@font/eb_garamond_semibold"
+            android:text="Change Profile Image"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="359dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/name_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/eb_garamond_semibold"
+                    android:paddingBottom="8dp"
+                    android:text="Name: John Doe"
+                    android:textColor="#444444"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/age_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/eb_garamond_semibold"
+                    android:paddingBottom="8dp"
+                    android:text="Age: 25"
+                    android:textColor="#444444"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/dob_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/eb_garamond_semibold"
+                    android:paddingBottom="8dp"
+                    android:text="Date of Birth: Jan 1, 1999"
+                    android:textColor="#444444"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/gender_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/eb_garamond_semibold"
+                    android:text="Gender: Male"
+                    android:textColor="#444444"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/upload_document_button"
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@android:color/holo_blue_light"
+                    android:fontFamily="@font/eb_garamond_semibold"
+                    android:foregroundTint="#08B1FD"
+                    android:text="Upload Document"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="@android:color/holo_blue_light"
+                    android:fontFamily="@font/eb_garamond_semibold"
+                    android:text="Save Profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons with Rounded Corners -->
+
+        <!-- ListView for Uploaded Documents -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="12dp">
+
+            <ListView
+                android:id="@+id/documents_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="1dp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

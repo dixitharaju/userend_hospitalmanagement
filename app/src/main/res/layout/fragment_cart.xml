@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:fontFamily="@font/eb_garamond_semibold"
+        android:src="@drawable/ic_cart"
+        android:text="Your Cart"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/total_amount"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/eb_garamond_semibold"
+        android:text="Total: $0.00"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:fontFamily="@font/eb_garamond_semibold"
+        android:text="Place Order"
+        android:textSize="24sp" />
+
+</LinearLayout>
